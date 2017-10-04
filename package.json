@@ -1,0 +1,23 @@
+{
+  "name": "camper_leaderboard",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://eigakow.github.io/fcc_camper_leaderboard",
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  }
+}
