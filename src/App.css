@@ -1,28 +1,52 @@
 .App {
-  text-align: center;
-}
+  background-color: #e0e0e0;
+  height: 100%; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.Header {
+  position: absoulte;
+  top: 0px;
+  height: 50px;
+  background-color: #006400; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
+.Board {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%; }
 
-.App-title {
-  font-size: 1.5em;
-}
+table {
+  margin: 20px auto 70px auto;
+  width: 100%; }
 
-.App-intro {
-  font-size: large;
-}
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center; }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+th {
+  padding: 15px; }
+
+.namecell {
+  padding: 5px;
+  text-align: left; }
+
+table tr:nth-child(even) {
+  background-color: #eee; }
+
+table tr:nth-child(odd) {
+  background-color: #fff; }
+
+img {
+  width: 40px;
+  border-radius: 5px; }
+
+.action:hover {
+  cursor: pointer; }
+
+.logo {
+  height: 37.5px;
+  width: 225px;
+  margin-left: 20px;
+  margin-top: 5px; }

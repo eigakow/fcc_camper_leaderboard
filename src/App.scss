@@ -1,0 +1,61 @@
+$primary-color: #006400;
+$background-color: #e0e0e0;
+
+.App {
+  background-color: $background-color;
+  height: 100%;
+}
+
+.Header {
+  position: absoulte;
+  top: 0px;
+  height: 50px;
+  background-color: $primary-color;
+}
+
+.Board {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+table {
+  margin: 20px auto 70px auto;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  padding: 15px;
+}
+.namecell {
+  padding: 5px;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+img {
+  width: 40px;
+  border-radius: 5px;
+}
+.action:hover {
+  cursor: pointer;
+}
+.logo {
+  //padding: 30px;
+  height: 37.5px;
+  width: 225px;
+  margin-left: 20px;
+  margin-top: 5px;
+  //  color: red;
+  //  background-color: yellow;
+}
